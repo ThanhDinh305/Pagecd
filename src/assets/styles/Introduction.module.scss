@@ -1,0 +1,111 @@
+
+@keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1; 
+    }
+  }
+@keyframes slideIn {
+    from {
+      
+        transform: translateX(250%); /* Start from right (off-screen) */
+    }
+    to {
+        transform: translateX(0); /* End in normal position */
+    }
+}
+
+@keyframes slideIn1 {
+    from {
+        transform: translateX(-20%); /* Start from right (off-screen) */
+    }
+    to {
+      opacity: 1;
+        transform: translateX(0); /* End in normal position */
+    }
+}
+.Image1 {
+    position: relative;
+    img{
+        width: min-content;
+        animation: fadeIn 3s ease-out forwards;
+
+    }
+   .LOGO{
+    width: 80px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+   }
+   
+    .Name{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        
+        top: 30%;
+        left: 20%;
+        color: pink;
+      .Text1{
+        display: flex;
+
+        transform: translateX(400%);
+        font-size: 100px;
+        font-weight: 700 ;
+        animation: slideIn 0.85s ease-out forwards;
+        animation-delay: 1.7s;
+      }
+      .Text2{
+       
+        display: flex;
+        flex-direction: column;
+    
+        gap: 30px;
+      width: fit-content;
+       .Text21{
+        transform: translateX(400%);
+        text-align: left;
+        font-size: 100px;
+        font-weight: 700 ;
+       
+        animation: slideIn 0.85s ease-out forwards; 
+        animation-delay: 1.95s;
+        
+       }
+       .Text22{
+        opacity: 0;
+        text-align: right;
+        font-size: 16px;
+      
+        animation: slideIn1 0.7s ease-out forwards;  
+        animation-delay: 2.5s;
+        h5{
+          color: #ddd;
+        }
+        } 
+        .Text23{
+          opacity: 0;
+          text-align: right;
+          font-size: 16px;
+        
+          animation: slideIn1 0.7s ease-out forwards;  
+          animation-delay: 3.1s;
+          h5{
+            color: #1439B6;
+            font-weight: 600;
+            transition: 0.3s;
+            cursor: pointer ;
+            &:hover{
+              color: black;
+            }
+          }
+          } 
+       
+      }
+     
+
+    }
+    
+}

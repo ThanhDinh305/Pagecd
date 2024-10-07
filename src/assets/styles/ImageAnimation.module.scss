@@ -1,0 +1,120 @@
+
+@-webkit-keyframes trxDemoAnimationFadeIn {
+	0%{opacity:0%}
+	100%{opacity:1}
+}
+@-moz-keyframes trxDemoAnimationFadeIn {
+	0%{opacity:0%}
+	100%{opacity:1}
+}
+@keyframes trxDemoAnimationFadeIn {
+	0%{opacity:0%}
+	100%{opacity:1}
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+  
+    .content1, .content2 {
+      display: flex;
+      flex-direction: column;
+     
+      flex: 1; 
+      .content12,.content21{
+        position: relative;
+        transition: 0.3s all;
+        &:hover {
+            
+          }
+          
+        .text{
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            
+           h2{
+            
+            font-size: 45px;
+            font-weight: 700;
+            color: white;
+            display: flex;
+            flex-direction: column;
+           }
+           p{
+            font-size: 20px;
+            font-weight: 700px;
+            color: white;
+           }
+        }
+        .IMG1{  
+            width: 100%;  
+        }
+      }
+      .content11, .content22 {
+        display: flex;
+        position: relative;
+        flex: 1; 
+       
+        .text {
+          background-color: #1439B6;
+          font-size: 30px;
+          font-weight: 700;
+          color: white;
+          padding: 0px 150px 0px 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: left;
+          .test{
+            display: flex;
+            flex-direction: column;
+          }
+          p {
+            font-size: 20px;
+            margin-top: 10px;
+          }
+  
+          
+        }
+        .text1 {
+            background-color: #000000;
+            font-size: 30px;
+            font-weight: 700;
+            color: white;
+            padding: 0px 200px 0px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            p {
+                font-size: 20px;
+                margin-top: 10px;
+              }
+    
+           
+    
+            
+          }
+    
+  
+        .IMG { 
+            position: relative;
+          flex: 1; 
+         
+          img {
+            width: 100%;
+            height: 100%;
+            
+          }
+        }
+      }
+    }
+  }
+  

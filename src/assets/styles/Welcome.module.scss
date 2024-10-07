@@ -1,0 +1,55 @@
+
+@keyframes slideIn {
+    from {
+      
+        transform: translateX(250%); /* Start from right (off-screen) */
+    }
+    to {
+        transform: translateX(0); /* End in normal position */
+    }
+}
+.Welcome{
+    animation: slideIn 0.85s ease-out forwards;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+   padding: 80px 60px;
+   gap: 80px;
+   align-items: center;
+   .text{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    .textWC{
+        width: fit-content;
+        padding: 10px 40px 10px 0px;
+        font-weight: 700;
+        font-size: 18px;
+        border-top:4px solid #1439b6 ;
+        color: #1439b6;
+        font-weight: bolder;
+    }
+    .content{
+        font-size: 3.75em;font-weight: 700;
+    }
+    .content1{
+     line-height: 35px;  
+     font-size: 18px;
+    }
+    .Name{
+        font-size: 18px;
+        font-weight: 700;
+        color: #1439b6;
+
+    }
+   }
+   .under{
+    width: 120%;
+ position: absolute;
+    top: 70%;
+    left: 34%;
+    z-index: -1;
+   }
+}

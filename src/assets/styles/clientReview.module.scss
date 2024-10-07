@@ -1,0 +1,61 @@
+.container{
+   color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-image: url('/image/bg_testimon.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 130px 100px;
+    
+    h1{
+        font-size: 65px;
+        font-weight: 700;
+    }
+      .content{
+        border-bottom: 2px solid #1439B6; 
+        padding: 0px 0px 110px;  
+     display: flex;
+     flex-direction: row;
+     gap: 40px;
+      .text{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        .dco{
+            font-size: 100px;
+            color: #1439B6;
+           
+        }
+        .check{
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            font-size: 20px;
+            .text1{
+               h2{
+                font-size: 24px;
+                font-weight: 600;
+               }
+               .decoration{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                place-items: center;
+                span{
+                    font-size: 40px;
+                    color: #1439B6;
+                    
+                }
+                h3{
+                    font-size: 16px;
+                }
+               }
+            }
+        }
+      }    
+    
+
+   }
+}

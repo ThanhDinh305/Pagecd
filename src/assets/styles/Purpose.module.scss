@@ -1,0 +1,114 @@
+.container{
+    .content1{
+        display: flex;
+        flex-direction: row;
+        .IMG{
+         flex: 1;
+        img{
+            width: 100%;
+            height: 100%;   
+        }
+        }
+        .text{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           
+
+           padding: 50px 70px;
+            gap: 50px;
+            h1{
+                    font-size: 38px;
+                    font-weight: 550;
+            }
+            .techeck{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+            
+               
+                .test{
+                    
+                    &:hover{
+                 
+                        .SVG{
+                            
+                            svg{
+                                color: #000;
+                            }
+                        }
+                      
+                    }
+                    .SVG{
+                        padding: 0px;
+                        svg{
+                            width: 43px;
+                            height: 43px;
+                           
+                            color: #1439B6;
+                           
+                            transition: 0.5s ease;
+                        }
+                    }
+                    .txcontnt{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        h2{
+                            font-size: 23px;
+                            font-weight: 450;
+                            transition: 0.5s all;
+                            &:hover{
+                                color: #1439B6;
+                            }
+                        }
+                        p{
+                            color: #888;
+                            line-height: 2rem;
+                        }
+                    }
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+    .content2{
+        display: flex;
+        flex-direction: row;
+        background-color: #E0E0E0;
+        .IMG{
+            flex: 1;
+            img{
+                width: 100%;
+            height: 100%;
+            }
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            width: 50%;
+            align-items: center;
+            h1{
+                font-size: 38px;
+                font-weight: 550;
+            }
+            .ctext{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+               p{
+                color: #888;
+                display: flex;
+                flex-direction: row;
+                place-items: center;
+                gap: 5px;
+               }
+            }
+        }
+    }
+}

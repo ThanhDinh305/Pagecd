@@ -1,0 +1,147 @@
+.container{
+    .content1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+        .Contact{
+           
+            display: flex;
+            flex-direction: column;
+          justify-content: center   ;
+          text-align: center;
+            color: #ffffff;
+            width: 25%;
+            background-color: #94a5df;
+        h2{
+            font-size: 17.5px;
+            font-weight: 600;
+            transition: 0.5s all;
+            &:hover{
+                color: #1439B6;
+            }
+        }
+        .email{
+            font-weight: 600;
+            transition: 0.5s all;
+            &:hover{
+                color: #1439B6;
+            }
+        }
+        }
+        .socialNetwork{
+            justify-content: center;
+           place-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            background-color: #1439B6;
+            width: 25%;
+            svg{
+                width: 25px;
+                height: 25px;
+                fill: #FFFFFF; 
+            }
+        }
+        .IMG{
+            width: 25%;
+            img{
+                width: 100%;
+            }
+        }
+        .address{
+            justify-content: center;
+            place-items: center;
+             display: flex;
+             flex-direction: column;
+            
+            h2{
+                font-size: 17.5px;
+                font-weight: 600;
+                
+
+            }
+            p{
+                color: #b3b3b3;
+            }
+            background-color: #FFFFFF;
+            width: 25%;
+        }
+
+    }
+    .content2{
+
+        display: flex;
+        flex-direction: row;
+        background-color: #090C1B;
+        
+        .Sub {
+            border-right: 1px solid #909090;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 10px;
+            width: 50%;
+          
+            input {
+              position: relative;
+              width: 80%;
+              color: #ffffff;
+              background: transparent;
+              padding: 20px 10px;
+              outline: none;
+              border-bottom: 2px solid rgb(118, 118, 118);
+              transition: 0.5s all;
+          
+              &:hover,
+              &:focus {
+                border-bottom: 2px solid rgb(255, 255, 255);
+              }
+          
+              &::before {
+                content: "→"; /* Mũi tên unicode */
+                height: 100%;
+                color: #ffffff;
+                width: 100px;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+              }
+            }
+          }
+          
+        .goal{
+            border-left: 1px solid #909090;
+            padding: 80px 120px ;
+           width: 50%;
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            justify-content: space-between;
+            color: #ffffff;
+            .PP1,.PP2{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                    h3{
+                        cursor: pointer;
+                        transition: 0.5s all;
+                    &:hover{
+                        color: #909090;
+                    }
+                    }
+            }
+            .text{
+                
+                display: flex;
+                flex-direction: column;
+              justify-content: center;
+                 color: #b3b3b3;
+                }
+        }
+        
+    }
+}
